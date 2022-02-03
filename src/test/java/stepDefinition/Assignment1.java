@@ -11,6 +11,8 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
 public class Assignment1 {
+	
+	Response res;
 	@Given("API for testing")
 	public void api_for_testing() {
 	    // Write code here that turns the phrase above into concrete actions
@@ -24,7 +26,7 @@ public class Assignment1 {
 	    // Write code here that turns the phrase above into concrete actions
 //	    throw new io.cucumber.java.PendingException();
 				
-		Response res = get("https://reqres.in/api/users?page=2");
+		res = get("https://reqres.in/api/users?page=2");
 		System.out.println(res.getStatusLine());
 		
 			}
@@ -33,7 +35,7 @@ public class Assignment1 {
 	public void validate_positive_response_code_received() {
 	    // Write code here that turns the phrase above into concrete actions
 //	    throw new io.cucumber.java.PendingException();
-		Response res = get("https://reqres.in/api/users?page=2");;
+		res = get("https://reqres.in/api/users?page=2");;
 		System.out.println(res.getStatusCode());
 		
 		int statusCode= res.getStatusCode();
