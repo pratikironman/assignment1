@@ -8,11 +8,11 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		features="src/test/java/featureFiles",
-		glue="assignment1",
-		tags="@tag1"
+		glue="assignment4",
+		tags="@TC01_Negative1"
 		
 		)
 
-public class TestRunner {
+public class TC01_Negative1 {
 
 }

@@ -1,4 +1,4 @@
-package stepDefinition;
+package assignment1;
 
 import static io.restassured.RestAssured.given;
 import org.junit.Assert;
