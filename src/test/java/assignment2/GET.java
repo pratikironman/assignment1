@@ -6,13 +6,7 @@ import io.restassured.response.Response;
 
 public class GET {
 	
-	Response res;
-//	@Test
-//	public void test_01() {
-//		given().header("Content-Type", "application/JSON").when().get("https://reqres.in/api/users?page=2").then()
-//				.statusCode(200).log().all().extract().response();
-//	}
-//	
+	Response res;	
 	@Given("sending the url request")
 	public void sending_the_url_request() {
 	    res= given().header("Content-Type", "application/JSON").when().get("https://reqres.in/api/users?page=2");
@@ -29,6 +23,11 @@ public class GET {
 		res.then().log().all().extract().response();
 		
 	}
-
-
 }
+
+//@Test
+//public void test_01() {
+//	given().header("Content-Type", "application/JSON").when().get("https://reqres.in/api/users?page=2").then()
+//			.statusCode(200).log().all().extract().response();
+//}
+//
